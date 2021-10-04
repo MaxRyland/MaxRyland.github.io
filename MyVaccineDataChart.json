@@ -1,0 +1,60 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Vaccination Data",
+      "subtitle":"Cummulative people completely vaccinated, by location",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "black"
+    },
+    
+     "data": {
+      "url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/utla_2021-10-04.csv",
+      "format": {"type": "csv"}
+    },
+  
+     "transform":[
+        
+        {"filter": {
+          "field": "areaName", 
+          "oneOf": ["Bristol, City of", "Ealing", "Dorset"]}
+          }
+  
+  
+      ],
+    
+    
+    "height": 300,
+    "width": 300,
+     
+    "mark": {"type": "line", "point": false},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "date",
+        "type": "temporal",
+        "title": null,
+        "axis": {"grid": false}
+      },
+  
+      "y": {
+        "field": "cumPeopleVaccinatedCompleteByVaccinationDate",
+        "type": "quantitative",
+        "title": null,
+        "axis": {"grid": false}
+      },
+  
+      "color": {
+        "field": "areaName",
+        "type": "nominal",
+        "scale": {"scheme": "set1"},
+        "title": null,
+        "legend": {
+          "orient": "top-left", 
+          "fillColor": "#FcFdFd"}
+      }
+  }
+  }
