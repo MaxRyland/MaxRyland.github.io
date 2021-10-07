@@ -1,1 +1,109 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Ryland's DS Portfolio</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+    </style>
+
+    <!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+
+
+
+<body>
+
+    <h1>Data Science 2021.</h1>
+     <h3>by Max Ryland</h3>
+    
+    <p> Welcome to my Data Science Portfolio </p>
+     <div class="wrap">  
+         <p class="rubric-launch"> If you would like to take a look at my Data Science Project, click <a class="textLink" href="project"> here</a>.</p>  
+    </div>
+
+    <h3>Covid-19</h3>
+
+    <p>The first chart tracks <strong>Covid-19</strong> cases by UK region.</p>
+
+<!--Vaga embed, with notes for what is going on-->
+<div class="chart" id="firstChart">
+
+  <script>
+    // Following the script tag we are using Javascript.
+    // One way to tell is to see how comments work...
+    // First job is to set the chart as a JS variable:
+    var myChart1 = "chart1_covidUKRegions.json";
+    // Now we simply insert it, using Vega's embed code:
+    // The embed function needs to be told the location, and what to put there. 
+    vegaEmbed('#firstChart', myChart1);
+  </script>
+
+</div>
+
+  <h3>Productivity puzzle</h3>
+
+    <p>My second chart looks at <strong>Productivity</strong> in the UK.</p>
+
+<div class="chart2" id="secondChart">
+  <script>
+    var myChart2 = "chart2_ukProductivity.json";
+    vegaEmbed('#secondChart', myChart2);
+  </script>
+</div>
+
+<h3>CO2 Emissions</h3>
+
+<p>My third chart looks at <strong>CO2 Emissions</strong> in the World.</p>
+
+
+<div class="chart3" id="thirdChart">
+  <script>
+    var myChart3 = "chart3_environment.json";
+    vegaEmbed('#thirdChart', myChart3);
+  </script>
+</div>
+    
+    
+<h3>My live chart with Covid Data (Route 1)</h3>
+
+<p>My fourth chart looks at daily new <strong>Covid-19 cases</strong> in three UK locations.</p>
+
+
+<div class="chart4" id="fourthChart">
+  <script>
+    var myChart4 = "MyCovidDataAPIChart.json";
+    vegaEmbed('#fourthChart', myChart4);
+  </script>
+</div>
+
+<h3>My Vaccine Data chart (Route 2) </h3>
+
+<p>My fifth chart looks at <strong>Vaccinations</strong> in three UK locations.</p>
+
+
+<div class="chart5" id="fifthChart">
+  <script>
+    var myChart5 = "MyVaccineDataChart.json";
+    vegaEmbed('#fifthChart', myChart5);
+  </script>
+</div>    
+    
+</body>
+
+
+</html>
+
