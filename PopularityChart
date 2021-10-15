@@ -1,0 +1,15 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+  "data": {
+    "values": [
+      {"Public Figures": "Queen Elizabeth II", "Popularity (%)": 72}, {"Public Figures": "Barack Obama", "Popularity (%)": 65}, {"Public Figures": "Adele", "Popularity (%)": 69},
+      {"Public Figures": "Prince William", "Popularity (%)": 62}, {"Public Figures": "Matt Hancock", "Popularity (%)": 13}, {"Public Figures": "David Attenborough", "Popularity (%)": 78}, {"Public Figures": "Morgan Freeman", "Popularity (%)": 82}
+    ]
+  },
+  "mark": "bar",
+  "encoding": {
+    "x": {"field": "Public Figures", "type": "nominal", "axis": {"labelAngle": 270}},
+    "y": {"field": "Popularity (%)", "type": "quantitative"}
+  }
+}
