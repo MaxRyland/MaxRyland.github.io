@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "Google's stock price over time.",
+    "data": {"url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/AMZNSTOCK.csv"},
+    
+    "title": {
+        "text": "Amazon Stock Price",
+        "subtitle":"Monthly close price. Source: Yahoo Finance",
+        "subtitleFontStyle":"italic",
+        "subtitleFontSize":10,
+        "anchor": "start",
+        "color": "black"
+      },
+    
+    "mark": "line",
+    "encoding": {
+      "x": {"field": "Date", "type": "temporal"},
+      "y": {"field": "Close price", "type": "quantitative"}
+    }
+  }
