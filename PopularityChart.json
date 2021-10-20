@@ -7,6 +7,10 @@
       {"Public Figures": "Prince William", "Popularity (%)": 62}, {"Public Figures": "Matt Hancock", "Popularity (%)": 13}, {"Public Figures": "David Attenborough", "Popularity (%)": 78}, {"Public Figures": "Morgan Freeman", "Popularity (%)": 82}
     ]
   },
+  
+  "height": 300,
+  
+  "width": 300,
   "mark": "bar",
   "encoding": {
     "x": {"field": "Public Figures", "type": "nominal", "axis": {"labelAngle": 270}},
