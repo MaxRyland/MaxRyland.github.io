@@ -32,15 +32,14 @@ color: rgb(255,255,255,0.8);
 
 
 .chart{
-    width: 350px;
-    border-width: 10px;
     background-color: white;
     border-style: solid;
-    border-radius: 5px;
     border-color: white;
-    margin: auto;
-
-
+    border-width: 4px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    transition: padding 500ms, border-radius 500ms;
 }
 
 
