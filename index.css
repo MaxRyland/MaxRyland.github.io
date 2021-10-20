@@ -30,6 +30,28 @@ color: rgb(255,255,255,0.8);
 }
 
 
+/* Flexbox containing home page graphs */
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 30px 30px;
+    margin-top: 30px;
+}
+.bcontainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;;
+    gap: 30px 30px;
+    margin-top: 30px;
+    border-style: solid;
+    border-color: white;
+    padding: 30px;
+    border-radius: 25px;
+  }
+
 
 .chart{
     background-color: white;
@@ -43,4 +65,5 @@ color: rgb(255,255,255,0.8);
 }
 
 
-
+.textlink { color: #f4c245; } /* CSS link color (red) */
+.textlink:hover { color: #f4c245; } /* CSS link hover (green) */
