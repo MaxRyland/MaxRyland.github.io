@@ -13,6 +13,10 @@
   "description": "Google's stock price over time.",
   "data": {"url": "https://rest.coinapi.io/v1/ohlcv/DOGE/USD/history?period_id=7DAY&time_start=2021-01-01T00:00:00&limit=100&include_empty_items=false&apikey=A2D3C8C4-F6E4-411E-9C91-AB70F567364D"},
 
+  "height": 300,
+  
+  "width": 300,
+  
   "mark": "line",
   "encoding": {
     "x": {"field": "time_period_start", "title": "Date", "type": "temporal"},
