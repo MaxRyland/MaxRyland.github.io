@@ -22,6 +22,10 @@
     {"filter":{"field":"home_team.name", "oneOf": ["Arsenal FC"]}}
   ],
 
+  "height": 300,
+  
+  "width": 300,
+  
   "mark": {
     "type":"bar",
     "color":"rgb(0,67,167)"},
