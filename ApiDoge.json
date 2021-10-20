@@ -1,0 +1,20 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text": "DOGE Coin: this year",
+    "subtitle":"Weekly close price. Source: coinapi.io",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "#000000",
+    "subtitleColor":"#000000"},
+
+  "description": "Google's stock price over time.",
+  "data": {"url": "https://rest.coinapi.io/v1/ohlcv/DOGE/USD/history?period_id=7DAY&time_start=2021-01-01T00:00:00&limit=100&include_empty_items=false&apikey=A2D3C8C4-F6E4-411E-9C91-AB70F567364D"},
+
+  "mark": "line",
+  "encoding": {
+    "x": {"field": "time_period_start", "title": "Date", "type": "temporal"},
+    "y": {"field": "price_close", "title": "Price ($)", "type": "quantitative", "format":"$,.5"}
+  }
