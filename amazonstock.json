@@ -12,6 +12,10 @@
         "color": "black"
       },
     
+  "height": 300,
+  
+  "width": 300,
+    
     "mark": "line",
     "encoding": {
       "x": {"field": "Date", "type": "temporal"},
