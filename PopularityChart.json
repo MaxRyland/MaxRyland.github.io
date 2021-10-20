@@ -10,7 +10,7 @@
   
    "title": {
     "text": "Public figure popularity",
-    "subtitle":[" Source: YouGov",""],
+    "subtitle":["Public figure popularity (in %). Source: YouGov",""],
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
     "anchor": "start",
@@ -23,7 +23,7 @@
   "width": 300,
   "mark": "bar",
   "encoding": {
-    "x": {"field": "Public Figures", "type": "nominal", "axis": {"labelAngle": 270}},
-    "y": {"field": "Popularity (%)", "type": "quantitative"}
+    "x": {"field": "Public Figures", "title": "",  "type": "nominal", "axis": {"labelAngle": 270}},
+    "y": {"field": "Popularity (%)", "title": "","type": "quantitative"}
   }
 }
