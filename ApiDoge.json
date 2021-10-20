@@ -18,3 +18,5 @@
     "x": {"field": "time_period_start", "title": "Date", "type": "temporal"},
     "y": {"field": "price_close", "title": "Price ($)", "type": "quantitative", "format":"$,.5"}
   }
+  
+    }
