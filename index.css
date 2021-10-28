@@ -88,14 +88,16 @@ color: rgb(255,255,255,0.8);
     padding: 5px 12px;
     text-align: left;
     text-overflow: ellipsis;
-    transition: border-color,background-color .5s ease;
+   /* transition: border-color,background-color .5s ease;*/
     white-space: nowrap;
     background-color: #f4c245;
     border: 1px solid #f4c245;
     color: rgb(255,255,255,0.8) !important;
   }
 
-  .dashboardButtonMore a:hover {
+  /*.dashboardButtonMore a:hover {
     background-color: #f4c245;
     opacity: 0.1;
-  }
+  }*/
+
+a:hover { background-color: #ffb700; }
