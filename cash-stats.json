@@ -1,0 +1,46 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+
+  "description": "Cash Withdrawal",
+
+   "title": {
+    "text": "Cash Withdrawals",
+    "subtitle":"Total number of cash withdrawals from ATMs in the UK, between 2001 and 2018 (in millions)",
+
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+  
+  "data": {
+    "url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/cash-stats.csv"},
+  "height": 300,
+  "width": 300,
+  "mark": {
+    "type": "line",
+    "point": false,
+    "interpolate": "monotone",
+    "color": "royalblue"
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "temporal",
+      "axis": {
+        "title": null,
+        "grid": false,
+        "labelSeparation": 20,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "",
+      "axis": {"grid": false},
+      "scale": {"domainMin": 1500 }
+    }
+
+  }
+}
