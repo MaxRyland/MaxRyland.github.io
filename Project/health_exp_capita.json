@@ -1,0 +1,104 @@
+
+   
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Health Expenditure",
+    
+      "subtitle":"Health expenditure of G20 nations, in USD per capita. Source: OECD",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "XYZcolor": "black",
+      "color": "antiquewhite",
+      "subtitleColor":"antiquewhite"
+
+    },
+    
+    "XYZconfig": {
+      "background":"black",
+      "view": {
+        "stroke": "transparent"
+      }
+    },
+
+    "config": {
+      "background":"#122b39",
+      "view": {
+        "stroke": "transparent"}},
+    
+
+     "data": {
+      "url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/Project/G20%20health%20expenditure%20per%20capita.csv",
+      "format": {"type": "csv"}
+    },
+
+
+ "selection": {
+  "Region": {
+    "type": "single",
+    "fields": ["LOCATION"],
+    "bind": {
+      "input": "select",
+      "options": [null, "AUS", "CAN", "FRA", "DEU", "ITA", "JPN", "KOR", "MEX", "TUR", "GBR", "USA", "BRA", "CHN", "IND", "IDN", "RUS", "ZAF"],
+      "name": "Pick a country"
+    }
+   
+  }
+},
+
+   "transform":[
+
+      
+      {"filter": {
+        "field": "LOCATION", 
+        "oneOf": ["AUS", "CAN", "FRA", "DEU", "ITA", "JPN", "KOR", "MEX", "TUR", "GBR", "USA", "BRA", "CHN", "IND", "IDN", "RUS", "ZAF"]}
+        },
+
+      {"filter": {"selection": "Region"}}
+
+
+    ], 
+
+    "height": 300,
+    "width": 300,
+     
+    "mark": {"type": "line", "point": false},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "TIME",
+        "type": "temporal",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor":"antiquewhite"}
+      },
+  
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": null,
+        "axis": {
+          "grid": false,
+          "labelColor":"antiquewhite"
+        }
+      },
+  
+      "color": {
+        "field": "LOCATION",
+        "type": "nominal",
+        "scale": {"scheme": "yelloworangered"},
+        "title": "",
+        "legend": {
+          "orient": "right", 
+          "XYZfillColor": "#FcFdFd",
+          "fillColor": "#122b39",
+          "labelColor":"antiquewhite"
+        }
+      }
+       
+    }
+  }
