@@ -98,7 +98,29 @@
           "fillColor": "#122b39",
           "labelColor":"antiquewhite"
         }
+      },
+
+      "tooltip": [
+      {
+        "field": "LOCATION",
+        "type": "quantitative",
+        "title": "Country"
+      },
+
+      {
+        "field": "TIME",
+        "type": "temporal",
+        "title": "Year"
+      },
+      
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "% of GDP ",
+        "format": ",.0f"
       }
+      
+    ]
        
     }
   }
