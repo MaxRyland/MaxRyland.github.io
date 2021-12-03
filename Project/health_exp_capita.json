@@ -116,7 +116,7 @@
       {
         "field": "Value",
         "type": "quantitative",
-        "title": "% of GDP ",
+        "title": "USD/capita ",
         "format": ",.0f"
       }
       
