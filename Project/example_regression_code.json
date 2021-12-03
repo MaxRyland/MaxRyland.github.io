@@ -1,0 +1,112 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "data/movies.json"
+  },
+
+  "height": 300,
+  "width": 300,
+
+"title": {
+      "text": "Regression",
+    
+      "subtitle":"Example regression on vega-lite",
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "white",
+      "subtitleColor":"white"
+          },
+    
+
+  "config": {
+      "background":"#122b39",
+      "view": {
+        "stroke": "transparent"}},
+
+  "layer": [
+    {
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "color": "white"
+      },
+      "encoding": {
+        "x": {
+          "field": "Rotten Tomatoes Rating",
+          "type": "quantitative",
+          "axis": {
+            "titleColor": "white",
+          "grid": false,
+          "labelColor":"white"}
+        },
+        "y": {
+          "field": "IMDB Rating",
+          "type": "quantitative",
+          "axis": {
+          "titleColor": "white",
+          "grid": false,
+          "labelColor":"white"}
+        },
+
+      "tooltip": [
+      {
+        "field": "Rotten Tomatoes Rating",
+        "type": "quantitative",
+        "title": null
+      },
+      
+      {
+        "field": "IMDB Rating",
+        "type": "quantitative",
+        "title": null
+      }
+      
+    ]
+
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "red"
+      },
+      "transform": [
+        {
+          "regression": "IMDB Rating",
+          "on": "Rotten Tomatoes Rating"
+        }
+      ],
+      "encoding": {
+        "x": {
+          "field": "Rotten Tomatoes Rating",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "IMDB Rating",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "regression": "IMDB Rating",
+          "on": "Rotten Tomatoes Rating",
+          "params": true
+        },
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "white",
+        "x": "width",
+        "align": "right",
+        "y": -5
+      },
+      "encoding": {
+        "text": {"type": "nominal", "field": "R2"}
+      }
+    }
+  ]
+}
