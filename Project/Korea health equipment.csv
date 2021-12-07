@@ -1,31 +1,76 @@
-﻿LOCATION,TIME,Hospital beds per 1000,Computed tomography (CT) scanners per million,Magnetic resonance imaging (MRI) units per 1 million
-KOR,1990,2.33,,
-KOR,1991,2.48,,
-KOR,1992,2.63,,1.39
-KOR,1993,2.85,12.22,1.81
-KOR,1994,3.16,13.69,2.87
-KOR,1995,3.34,15.5,3.86
-KOR,1996,3.53,20.12,4.7
-KOR,1997,3.7,21.02,5.14
-KOR,1998,3.89,23.07,5.4
-KOR,1999,4.25,22.97,6.8
-KOR,2000,4.65,28.38,7.85
-KOR,2001,4.45,27.3,8.98
-KOR,2002,4.83,30.94,11.04
-KOR,2003,5.09,31.86,12.12
-KOR,2004,5.42,31.51,13.56
-KOR,2005,5.9,32.31,15.96
-KOR,2006,6.48,33.63,17.43
-KOR,2007,7.24,36.95,18.74
-KOR,2008,7.73,36.45,19.88
-KOR,2009,8.19,36.71,21.27
-KOR,2010,8.74,35.17,23.37
-KOR,2011,9.53,35.79,24.35
-KOR,2012,10.25,36.93,25.5
-KOR,2013,10.92,37.5,26.27
-KOR,2014,11.59,36.85,27.82
-KOR,2015,11.61,37.03,29.13
-KOR,2016,11.99,37.82,30.09
-KOR,2017,12.29,38.24,32.03
-KOR,2018,12.44,38.58,
-KOR,2019,12.44,39.63,
+﻿TYPE,TIME,VALUE
+Hospital beds ,1993,2.85
+Hospital beds ,1994,3.16
+Hospital beds ,1995,3.34
+Hospital beds ,1996,3.53
+Hospital beds ,1997,3.7
+Hospital beds ,1998,3.89
+Hospital beds ,1999,4.25
+Hospital beds ,2000,4.65
+Hospital beds ,2001,4.45
+Hospital beds ,2002,4.83
+Hospital beds ,2003,5.09
+Hospital beds ,2004,5.42
+Hospital beds ,2005,5.9
+Hospital beds ,2006,6.48
+Hospital beds ,2007,7.24
+Hospital beds ,2008,7.73
+Hospital beds ,2009,8.19
+Hospital beds ,2010,8.74
+Hospital beds ,2011,9.53
+Hospital beds ,2012,10.25
+Hospital beds ,2013,10.92
+Hospital beds ,2014,11.59
+Hospital beds ,2015,11.61
+Hospital beds ,2016,11.99
+Hospital beds ,2017,12.29
+CT scanners ,1993,12.22
+CT scanners ,1994,13.69
+CT scanners ,1995,15.5
+CT scanners ,1996,20.12
+CT scanners ,1997,21.02
+CT scanners ,1998,23.07
+CT scanners ,1999,22.97
+CT scanners ,2000,28.38
+CT scanners ,2001,27.3
+CT scanners ,2002,30.94
+CT scanners ,2003,31.86
+CT scanners ,2004,31.51
+CT scanners ,2005,32.31
+CT scanners ,2006,33.63
+CT scanners ,2007,36.95
+CT scanners ,2008,36.45
+CT scanners ,2009,36.71
+CT scanners ,2010,35.17
+CT scanners ,2011,35.79
+CT scanners ,2012,36.93
+CT scanners ,2013,37.5
+CT scanners ,2014,36.85
+CT scanners ,2015,37.03
+CT scanners ,2016,37.82
+CT scanners ,2017,38.24
+MRI units,1993,1.81
+MRI units,1994,2.87
+MRI units,1995,3.86
+MRI units,1996,4.7
+MRI units,1997,5.14
+MRI units,1998,5.4
+MRI units,1999,6.8
+MRI units,2000,7.85
+MRI units,2001,8.98
+MRI units,2002,11.04
+MRI units,2003,12.12
+MRI units,2004,13.56
+MRI units,2005,15.96
+MRI units,2006,17.43
+MRI units,2007,18.74
+MRI units,2008,19.88
+MRI units,2009,21.27
+MRI units,2010,23.37
+MRI units,2011,24.35
+MRI units,2012,25.5
+MRI units,2013,26.27
+MRI units,2014,27.82
+MRI units,2015,29.13
+MRI units,2016,30.09
+MRI units,2017,32.03
