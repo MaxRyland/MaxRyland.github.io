@@ -1,0 +1,93 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+    "description": "dual y axis chart with data collected from world bank in csv file and cleaned manually",
+  
+  "title": {
+      "text": "World GDP & Health Expenditure",
+      "subtitle":["World aggregate of GDP per capita and Health expenditure per capita", "from 2000 to 2018, in current US$. Source: World Bank"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "XYZcolor": "black",
+      "color": "white",
+      "subtitleColor":"white"
+    },
+  
+    "width": 300, 
+    "height": 300,
+  
+    "data": {
+      "url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/Project/World_GDPPC_HSpending.csv",
+       "format": {"type": "csv"}
+    },
+  
+    "config": {
+      "background":"#2a364f",
+      "view": {
+        "stroke": "transparent"}},
+  
+    
+    "encoding": {
+      "x": {
+        "field": "TIME",
+        "title": "Year",
+        "type":"temporal",
+        "scale": {"domain": [1999, 2019]},
+        "timeUnit": "year",
+        "axis":{"labelColor": "white", "titleColor": "white", "grid": ""}
+      }
+    },
+    "layer": [
+      {
+        "mark": {"type": "line", "color": "#f4c245"},
+        "encoding": {
+          "y": {
+            "field": "GDPPC Value",
+            "type": "quantitative",
+            "title": "GDP per capita",
+            "axis": {"titleColor": "#f4c245",
+                     "labelColor": "#f4c245"}
+          }
+        }
+        },
+      {
+        "mark": {"type": "line", "color": "orangered"},
+        "encoding": {
+          "y": {
+            "field": "Hspending",
+            "type": "quantitative",
+            "title": "Health Expenditure per capita",
+            "axis": {"titleColor":"orangered",
+                     "labelColor": "orangered"}
+          }
+        }
+      },
+  
+  
+  {"mark": {"type": "rule", "color": "white"},
+        "encoding": {
+          "opacity": {
+            "condition": {"value": 1, "param": "hover", "empty": false},
+            "value": 0
+          },
+          "tooltip": [
+            {"field": "GDPPC Value", "type": "quantitative", "title": "GDP per Capita ($)"},
+            {"field": "Hspending", "type": "quantitative", "title": "Health Expenditure per Capita ($)"}
+          ]
+        },
+        "params": [{
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "fields": ["TIME"],
+            "nearest": true,
+            "on": "mouseover",
+            "clear": "mouseout"
+          }
+        }]
+  
+  }],
+  
+    "resolve": {"scale": {"y": "independent"}}
+  }
