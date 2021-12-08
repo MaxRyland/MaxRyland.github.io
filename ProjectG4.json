@@ -1,0 +1,116 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "South Korea's Health Equipment & Staff",
+      "subtitle":["South Korea's capital investment in CT Scanners, MRI units, hospital beds,","and Human investment in  Doctors, and Nurses from 1997 to 2017.     Source: OECD"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "XYZcolor": "black",
+      "color": "white",
+      "subtitleColor":"white"
+
+    },
+    
+    "XYZconfig": {
+      "background":"black",
+      "view": {
+        "stroke": "transparent"
+      }
+    },
+
+    "config": {
+      "background":"#2a364f",
+      "view": {
+        "stroke": "transparent"}},
+    
+
+     "data": {
+      "url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/Project/KOREA%20%20staff%26equipment.csv", "format":{
+        "type":"csv"
+      }},
+
+"transform":[
+
+      {"filter": {
+        "field": "TYPE", 
+        "oneOf": ["Hospital beds (per 1000)", "CT scanners (per million)", "MRI units (per million)", "Nurses (per 1000)", "Doctor (per 1000)"]}
+        },
+
+      {"filter": {"selection": "Region"}}
+
+
+    ], 
+
+
+ "selection": {
+  "Region": {
+    "type": "single",
+    "fields": ["TYPE"],
+    "bind": {
+      "input": "select",
+      "options": [null, "Hospital beds (per 1000)", "CT scanners (per million)", "MRI units (per million)", "Nurses (per 1000)", "Doctor (per 1000)"],
+      "name": "Select "
+    }
+   
+  }
+},
+    "height": 300,
+    "width": 300,
+     
+    "mark": {"type": "line", "point": true},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "TIME",
+        "type": "temporal",
+        "title": "",
+        "axis": {
+          "grid": false,
+          "labelColor":"white"}
+      },
+  
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Health Equipment",
+        "axis": {
+          "grid": false,
+          "titleColor": "white",
+          "labelColor":"white"
+        }
+      },
+  
+      "color": {
+        "field": "TYPE",
+        "type": "nominal",
+        "scale": {"scheme": "yelloworangered"},
+        "title": "",
+        "legend": {
+          "orient": "right",
+          "fillColor": "#2a364f",
+          "labelColor":"white"
+        }
+      },
+  
+    "tooltip": [
+      {
+        "field": "TYPE",
+        "type": "ordinal",
+        "title": "Type of equipment"
+      },
+
+      
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Stock"
+      }
+      
+    ]
+
+
+    }
+  }
