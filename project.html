@@ -17,8 +17,8 @@
     </style>
 
     <!--The next three lines allow the Vega embed-->
-<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
-<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
 
 </head>
@@ -26,7 +26,7 @@
 <body>
 
     <h1>Economics X Health: <br>
-    How can economic development improve health?</h1>
+    How can economic prosperity improve health?</h1>
     <h3>by Max Ryland</h3>
     
     <a class="dashboardButtonMore" href="index">Home</a>
@@ -38,11 +38,102 @@
              To return to the Home page, click <a class="textLink" href="index" style="color: #f4c245"> here</a>.</p>  
     </div> -->
     
-    <p> <br>
-        Work currently in progress. <p>
-    
-    
+<br>
+<br>
+    <div class="chart2" id="firstChart">
+        <script>
+         var myChart1 = "Graph1.json";
+          vegaEmbed('#firstChart', myChart1);
+          </script>
+      </div>
 
+<p> <br> <br>
+    
+    There is a general consensus that economic prosperity is thought to improve the health of a country.
+    Indeed, citizens of richer countries typically suffer less from diseases and illnesses, and 
+    live longer lives. </p>
+
+<p> <br>
+    The chart on the right shows the relationship between economic prosperity and longevity of a population. 
+    We see that GDP per capita is positively correlated with life expectancy at birth among OECD countries. 
+    For every 10.000 dollar increase in GDP per capita life expectancy at birth increases by 0.7 years. </p>
+
+<p> <br> 
+    Furthermore, we see from the below chart that the top 3 healthiest countries in the world, 
+    according to the Bloomberg Health Index, are highly developed economies with high GDP/capita levels. 
+    Whilst the 3 least healthiest countries are poorer, less developed nations. </p>
+
+    <br> 
+
+    <div class="chart3" id="secondChart">
+        <script>
+         var myChart2 = "Graph4.json";
+          vegaEmbed('#secondChart', myChart2);
+          </script>
+    </div>
+    
+<p> <br> <br> <br> 
+    While economic prosperity undeniably leads to longer and healthier lives, the aim of this project
+    is to go beyond this main wisdom and examine <strong> how exactly does economic prosperity 
+    cause good health.</strong>  
+</p>
+
+<p> <br>  
+    The first channel of interest that we will explore is how economic prosperity may affect
+    the supply side of health. Indeed, the fruits of economic growth would allow 
+    governments to increase spending on public health services.
+</p>
+
+<p> <br>
+    We can observe this mechanism from the below chart. As world GDP per capita has 
+    increased over the course of the 21st century so too has health expenditure per capita. 
+    In fact, both measures seem to increase in tandem, as GDP and Health spending have roughly 
+    doubled since 2000.
+</p>
+
+ <div class="chart2" id="thirdChart">
+    <script>
+     var myChart3 = "Graph5.json";
+      vegaEmbed('#thirdChart', myChart3);
+      </script>
+  </div> 
+
+<br> <br> <br>
+
+<p> <br> <br> <br>
+    Health spending increases are the result of economic growth. Additional health spending allows 
+    national health services to invest in human and physsical capital which improves the country’s supply 
+    of health and, by definition, the quality of overall health.
+</p>
+
+<p> <br>
+    We consider this theory by studying South Korea’s supply of healthcare. South Korea has undergone 
+    incredible economic growth in the last half century, averaging a 6.34% annual GDP growth rate since
+    1990, during which the country has transitioned from a developing to a developed country.
+    As expected, South Korea’s healthcare provision has significantly improved alongside 
+    its economic prosperity. 
+</p>
+
+<br> <br> <br>
+ 
+<div class="chart3" id="fourthChart">
+    <script>
+     var myChart4 = "Graph6.json";
+      vegaEmbed('#fourthChart', myChart4);
+      </script>
+  </div> 
+
+  <p> <br>
+    We see vast improvements to healthcare resources in South Korea. The number of hospital
+    beds available have more than tripled and CT scanners and MRI units, which help physicians diagnose
+    a range of conditions by producing images of internal organs and structures of the body, have 
+    increased twofold and sixfold, respectively. The numbers of nurses and doctors have also doubled 
+    in the last 20 years. 
+</p>
+
+<p> <br>
+    In sum, economic prosperity improves health through increased spending on healthcare.
+</p>
 
 
 </body>
