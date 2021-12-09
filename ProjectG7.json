@@ -1,0 +1,133 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
+  "title": {
+    "text": "Life Expectency",
+    "subtitle":"Life expectency at birth of selected African countries between 2000-2019. Source: WHO API",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "XYZcolor": "black",
+    "color": "white",
+    "subtitleColor":"white"
+
+  },
+  
+  "XYZconfig": {
+    "background":"black",
+    "view": {
+      "stroke": "transparent"
+    }
+  },
+
+  "config": {
+    "background":"#2a364f",
+    "view": {
+      "stroke": "transparent"}},
+  
+
+   "data": {
+    "url": "https://apps.who.int/gho/athena/api/GHO/WHOSIS_000001.json?profile=simple",
+    "format":{
+      "type":"json",
+      "property":"fact"
+    }},
+
+"transform":[
+
+    
+    {"filter": {
+      "field": "dim.COUNTRY", 
+      "oneOf": ["Kenya", "Ghana", "Nigeria", "Rwanda", "Ethiopia"]}
+      },
+
+    {"filter": {
+        "field": "dim.SEX", 
+        "equal": "Both sexes"}},
+
+    {"filter": {"selection": "Region"}}
+
+
+  ], 
+
+
+"selection": {
+"Region": {
+  "type": "single",
+  "fields": ["dim.COUNTRY"],
+  "bind": {
+    "input": "select",
+    "options": [null, "Kenya", "Ghana", "Nigeria", "Rwanda", "Ethiopia"],
+    "name": "Pick a country "
+  }
+ 
+}
+},
+
+ 
+
+  "height": 300,
+  "width": 400,
+   
+  "mark": {"type": "line", "point": true},
+ 
+  "encoding": {
+
+    "x": {
+      "field": "dim.YEAR",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "grid": false,
+        "labelColor":"white"}
+    },
+
+    "y": {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Life expectency at birth",
+      "scale": {"domain": [45, 75]},
+      "axis": {
+        "grid": false,
+        "titleColor": "white",
+        "labelColor":"white"
+      }
+    },
+
+    "color": {
+      "field": "dim.COUNTRY",
+      "type": "nominal",
+      "scale": {"scheme": "yelloworangered"},
+      "title": "",
+      "legend": {
+        "orient": "bottom", 
+        "XYZfillColor": "#FcFdFd",
+        "fillColor": "#2a364f",
+        "labelColor":"white"
+      }
+    },
+     
+     "tooltip": [
+    {
+      "field": "dim.COUNTRY",
+      "type": "ordinal",
+      "title": "Country"
+    },
+
+    {
+      "field": "dim.YEAR",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    
+    {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Expected Years ",
+      "format": ",.0f"
+    }
+    
+  ]
+
+  }
+}
