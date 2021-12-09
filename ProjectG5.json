@@ -1,0 +1,109 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title": {
+      "text": "Fastest Growing African Economies",
+      "subtitle":["GDP per capita, current US$, of selected African economies from 2000 to 2020","Source: World Bank"],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "anchor": "start",
+      "color": "white",
+      "subtitleColor":"white"
+
+    },
+   
+
+    "config": {
+      "background":"#2a364f",
+      "view": {
+        "stroke": "transparent"}},
+    
+
+     "data": {
+      "url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/Project/GDPC%205%20African%20Countries.csv", "format":{
+        "type":"csv"
+      }},
+
+"transform":[
+
+      {"filter": {
+        "field": "Country", 
+        "oneOf": ["Ethiopia", "Ghana", "Kenya", "Nigeria", "Rwanda"]}
+        },
+
+      {"filter": {"selection": "Region"}}
+
+
+    ], 
+
+
+ "selection": {
+  "Region": {
+    "type": "single",
+    "fields": ["Country"],
+    "bind": {
+      "input": "select",
+      "options": [null, "Ethiopia", "Ghana", "Kenya", "Nigeria", "Rwanda"],
+      "name": "Pick a country "
+    }
+   
+  }
+},
+    "height": 300,
+    "width": 300,
+     
+    "mark": {"type": "line", "point": true},
+   
+    "encoding": {
+  
+      "x": {
+        "field": "Date",
+        "type": "temporal",
+        "title": "",
+        "axis": {
+          "grid": false,
+          "labelColor":"white"}
+      },
+  
+      "y": {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "Health Equipment",
+        "axis": {
+          "grid": false,
+          "titleColor": "white",
+          "labelColor":"white"
+        }
+      },
+  
+      "color": {
+        "field": "Country",
+        "type": "nominal",
+        "scale": {"scheme": "yelloworangered"},
+        "title": "",
+        "legend": {
+          "orient": "bottom",
+          "fillColor": "#2a364f",
+          "labelColor":"white"
+        }
+      },
+  
+    "tooltip": [
+      {
+        "field": "Country",
+        "type": "ordinal",
+        "title": "Country"
+      },
+
+      
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "title": "GDP/capita in US$"
+      }
+      
+    ]
+
+
+    }
+  }
