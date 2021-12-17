@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-    "description": "Data downloaded from WB - missing values deleted",
+    "description": "Data collected from WB - missing values deleted - then cleaned and sorted in excel. Line chart with tooltip and dropdown menu created in vega-lite",
     
     "title": {
       "text": "Malnutrition in African Economies",
