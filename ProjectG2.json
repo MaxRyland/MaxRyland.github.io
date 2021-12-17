@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
 
-  "description": "Bar Chart with a spacing-saving y-axis",
+  "description": "Bloomberg data collected from World population review website, OECD data from online data library. Data cleaned and joined in excel before making bar chart in vega lite.",
 
 "config": {
     "background":"#2a364f",
