@@ -3,6 +3,8 @@
   "data": {
     "url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/Project/GDP_LE_JOINED%20DATA.csv"
   },
+  
+  "description": "Data collected from OECD online data library and cleaned and sorted in excel. Regression chart built using vega-lite library example",
 
   "height": 300,
   "width": 300,
