@@ -1,0 +1,69 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "description": "Bar Chart with a spacing-saving y-axis",
+
+"config": {
+    "background":"white",
+    "view": {
+      "stroke": "transparent"}},
+
+  "title": {
+    "text": "Healthiest countries",
+  
+    "subtitle":["Top and bottom 3 healthiest countries in 2019", "and corresponding per capita GDP.", "Source: Bloomberg Global Health Index, OECD."],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black",
+    "subtitleColor":"black"
+      },
+
+  "width": 300,
+  
+
+  "data": {"url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/Project/bloomberg_index.csv"},
+  "height": {"step": 50},
+  "mark": {"type": "bar", "color": "royalblue", "yOffset": 5, "cornerRadiusEnd": 2, "height": {"band": 0.5}},
+  "encoding": {
+    "y": {
+      "field": "country",
+      "title": null,
+      "scale": {"padding": 0},
+      "sort": "-x",
+      "axis": {
+        "bandPosition": 0,
+        "grid": true,
+        "domain": false,
+        "ticks": false,
+        "labelColor": "black",
+        "labelAlign": "left",
+        "labelBaseline": "middle",
+        "labelPadding": -5,
+        "labelOffset": -15,
+        "titleX": 5,
+        "titleY": -5,
+        "titleAngle": 0,
+        "titleAlign": "left"
+      }
+    },
+    "x": {
+      "field": "healthGrade",
+      "type": "quantitative",
+      "axis": {"grid": false, "labelColor": "black", "titleColor": "black"},
+      "title": "Health Index"
+      },
+    "tooltip": [
+      {
+        "field": "healthGrade",
+        "type": "quantitative",
+        "title": "Health Index"
+      },
+
+      {
+        "field": "GDP Value",
+        "type": "ordinal",
+        "title": "GDP/capita in $"
+      }]
+    }
+  }
