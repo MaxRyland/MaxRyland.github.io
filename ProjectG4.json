@@ -1,6 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
+    "description": "Data collected from OECD online library then cleaned and sortedin excel. Line chart with tooltip and dropdown menu created in vega-lite ",
+    
     "title": {
       "text": "South Korea's Health Equipment & Staff",
       "subtitle":["South Korea's capital investment in CT Scanners, MRI units, hospital beds,","and Human investment in  Doctors, and Nurses from 1997 to 2017.     Source: OECD"],
