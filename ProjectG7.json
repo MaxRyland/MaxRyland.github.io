@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   
+  "description": "Data collected from WHO API. Line chart with tooltip and dropdown menu created in vega-lite",
+  
   "title": {
     "text": "Life Expectency",
     "subtitle":"Life expectency at birth of selected African countries between 2000-2019. Source: WHO API",
