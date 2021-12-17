@@ -1,6 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     
+     "description": "Data collected from OECD online data library then cleaned and sorted in excel. Line chart with tooltip and dropdown menu created in vega-lite",
+    
     "title": {
       "text": "Fastest Growing African Economies",
       "subtitle":["GDP per capita, current US$, of selected African economies from 2000 to 2020","Source: World Bank"],
