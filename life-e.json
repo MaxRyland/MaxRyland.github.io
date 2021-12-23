@@ -5,6 +5,8 @@
     "url": "https://raw.githubusercontent.com/MaxRyland/MaxRyland.github.io/main/life-e.csv"
   },
   
+  "description": "Data scraped from the table on https://worldpopulationreview.com/countries/life-expectancy webpage. Selection of countries with varrying life expectancies",
+  
    "title": {
     "text": "Life expectancy",
     "subtitle":["Life expectancy (in years). Source: World Population Review",""],
