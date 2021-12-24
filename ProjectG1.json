@@ -10,7 +10,7 @@
   "width": 300,
 
 "title": {
-      "text": "GDP and Life Expectency",
+      "text": "Graph 1: GDP and Life Expectency",
   
       "subtitle":["Linear regression of life expectency at birth on GDP/capita,","OECD countries, in 2019. Source: OECD "],
       "subtitleFontStyle":"italic",
