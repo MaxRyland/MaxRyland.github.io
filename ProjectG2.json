@@ -9,7 +9,7 @@
       "stroke": "transparent"}},
 
   "title": {
-    "text": "Healthiest countries",
+    "text": "Graph 2: Healthiest countries",
   
     "subtitle":["Top and bottom 3 healthiest countries in 2019", "and corresponding per capita GDP.", "Source: Bloomberg Global Health Index, OECD."],
     "subtitleFontStyle":"italic",
