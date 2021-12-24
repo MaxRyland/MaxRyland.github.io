@@ -4,7 +4,7 @@
     "description": "Data collected from WB - missing values deleted - then cleaned and sorted in excel. Line chart with tooltip and dropdown menu created in vega-lite",
     
     "title": {
-      "text": "Malnutrition in African Economies",
+      "text": "Graph 6: Malnutrition in African Economies",
       "subtitle":["Prevalence of stunting, height for age (% of children under 5) from 2000 to 2020.","Yearly values are not all availbale. Source: World Bank"],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
