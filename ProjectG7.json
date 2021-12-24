@@ -133,20 +133,3 @@
 
   }
 }
-    {
-      "field": "dim.YEAR",
-      "type": "ordinal",
-      "title": "Year"
-    },
-    
-    {
-      "field": "Value",
-      "type": "quantitative",
-      "title": "Expected Years ",
-      "format": ",.0f"
-    }
-    
-  ]
-
-  }
-}
