@@ -4,7 +4,7 @@
   "description": "Data collected from WHO API. Line chart with tooltip and dropdown menu created in vega-lite",
   
   "title": {
-    "text": "Life Expectancy",
+    "text": "Graph 7: Life Expectancy",
     "subtitle":"Life expectency at birth of selected African countries between 2000-2019. Source: WHO API",
     "subtitleFontStyle":"italic",
     "subtitleFontSize":10,
@@ -40,7 +40,7 @@
     
     {"filter": {
       "field": "dim.COUNTRY", 
-      "oneOf": ["Kenya", "Ghana", "Nigeria", "Rwanda", "Ethiopia"]}
+      "oneOf": ["Kenya", "Ghana", "Nigeria", "Rwanda", "Ethiopia", "Republic of Korea"]}
       },
 
     {"filter": {
@@ -59,7 +59,7 @@
   "fields": ["dim.COUNTRY"],
   "bind": {
     "input": "select",
-    "options": [null, "Kenya", "Ghana", "Nigeria", "Rwanda", "Ethiopia"],
+    "options": [null, "Kenya", "Ghana", "Nigeria", "Rwanda", "Ethiopia", "Republic of Korea"],
     "name": "Pick a country "
   }
  
@@ -88,7 +88,7 @@
       "field": "Value",
       "type": "quantitative",
       "title": "Life expectency at birth",
-      "scale": {"domain": [45, 75]},
+      "scale": {"domain": [45, 85]},
       "axis": {
         "grid": false,
         "titleColor": "white",
@@ -116,6 +116,23 @@
       "title": "Country"
     },
 
+    {
+      "field": "dim.YEAR",
+      "type": "ordinal",
+      "title": "Year"
+    },
+    
+    {
+      "field": "Value",
+      "type": "quantitative",
+      "title": "Expected Years ",
+      "format": ",.0f"
+    }
+    
+  ]
+
+  }
+}
     {
       "field": "dim.YEAR",
       "type": "ordinal",
