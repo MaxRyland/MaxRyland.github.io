@@ -4,7 +4,7 @@
     "description": "dual y axis chart with data collected from world bank in csv file and cleaned manually",
   
   "title": {
-      "text": "World GDP & Health Expenditure",
+      "text": "Graph 3: World GDP & Health Expenditure",
       "subtitle":["World aggregate of GDP per capita and Health expenditure per capita", "from 2000 to 2018, in current US$. Source: World Bank"],
       "subtitleFontStyle":"italic",
       "subtitleFontSize":10,
