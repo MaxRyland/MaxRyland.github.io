@@ -1,121 +1,121 @@
 ﻿LOCATION,TIME,LE
-Ethiopia,2000,51.941
-Ethiopia,2001,52.595
-Ethiopia,2002,53.349
-Ethiopia,2003,54.211
-Ethiopia,2004,55.174
-Ethiopia,2005,56.223
-Ethiopia,2006,57.334
-Ethiopia,2007,58.467
-Ethiopia,2008,59.581
-Ethiopia,2009,60.645
-Ethiopia,2010,61.627
-Ethiopia,2011,62.505
-Ethiopia,2012,63.281
-Ethiopia,2013,63.961
-Ethiopia,2014,64.547
-Ethiopia,2015,65.048
-Ethiopia,2016,65.482
-Ethiopia,2017,65.872
-Ethiopia,2018,66.24
-Ethiopia,2019,66.597
-Ghana,2000,57.002
-Ghana,2001,57.158
-Ghana,2002,57.425
-Ghana,2003,57.785
-Ghana,2004,58.225
-Ghana,2005,58.719
-Ghana,2006,59.234
-Ghana,2007,59.741
-Ghana,2008,60.216
-Ghana,2009,60.645
-Ghana,2010,61.03
-Ghana,2011,61.381
-Ghana,2012,61.72
-Ghana,2013,62.064
-Ghana,2014,62.416
-Ghana,2015,62.772
-Ghana,2016,63.124
-Ghana,2017,63.463
-Ghana,2018,63.78
-Ghana,2019,64.074
-Kenya,2000,50.921
-Kenya,2001,51.101
-Kenya,2002,51.606
-Kenya,2003,52.41
-Kenya,2004,53.475
-Kenya,2005,54.732
-Kenya,2006,56.093
-Kenya,2007,57.463
-Kenya,2008,58.76
-Kenya,2009,59.932
-Kenya,2010,60.959
-Kenya,2011,61.851
-Kenya,2012,62.659
-Kenya,2013,63.419
-Kenya,2014,64.135
-Kenya,2015,64.798
-Kenya,2016,65.393
-Kenya,2017,65.909
-Kenya,2018,66.342
-Kenya,2019,66.699
-Nigeria,2000,46.267
-Nigeria,2001,46.51
-Nigeria,2002,46.835
-Nigeria,2003,47.242
-Nigeria,2004,47.72
-Nigeria,2005,48.252
-Nigeria,2006,48.812
-Nigeria,2007,49.373
-Nigeria,2008,49.913
-Nigeria,2009,50.422
-Nigeria,2010,50.896
-Nigeria,2011,51.346
-Nigeria,2012,51.786
-Nigeria,2013,52.228
-Nigeria,2014,52.672
-Nigeria,2015,53.112
-Nigeria,2016,53.541
-Nigeria,2017,53.95
-Nigeria,2018,54.332
-Nigeria,2019,54.687
-Rwanda,2000,48.649
-Rwanda,2001,49.936
-Rwanda,2002,50.987
-Rwanda,2003,52.178
-Rwanda,2004,53.595
-Rwanda,2005,55.254
-Rwanda,2006,57.083
-Rwanda,2007,58.915
-Rwanda,2008,60.612
-Rwanda,2009,62.129
-Rwanda,2010,63.433
-Rwanda,2011,64.523
-Rwanda,2012,65.438
-Rwanda,2013,66.219
-Rwanda,2014,66.884
-Rwanda,2015,67.45
-Rwanda,2016,67.93
-Rwanda,2017,68.341
-Rwanda,2018,68.7
-Rwanda,2019,69.024
-South Korea,2000,75.9097561
-South Korea,2001,76.4121951
-South Korea,2002,76.7658537
-South Korea,2003,77.2146341
-South Korea,2004,77.6658537
-South Korea,2005,78.1682927
-South Korea,2006,78.6682927
-South Korea,2007,79.1195122
-South Korea,2008,79.5170732
-South Korea,2009,79.9682927
-South Korea,2010,80.1170732
-South Korea,2011,80.5682927
-South Korea,2012,80.8195122
-South Korea,2013,81.2707317
-South Korea,2014,81.7219512
-South Korea,2015,82.0243902
-South Korea,2016,82.2756098
-South Korea,2017,82.6268293
-South Korea,2018,82.6268293
-South Korea,2019,83.2268293
+Ethiopia,2000,52
+Ethiopia,2001,53
+Ethiopia,2002,53
+Ethiopia,2003,54
+Ethiopia,2004,55
+Ethiopia,2005,56
+Ethiopia,2006,57
+Ethiopia,2007,58
+Ethiopia,2008,60
+Ethiopia,2009,61
+Ethiopia,2010,62
+Ethiopia,2011,63
+Ethiopia,2012,63
+Ethiopia,2013,64
+Ethiopia,2014,65
+Ethiopia,2015,65
+Ethiopia,2016,65
+Ethiopia,2017,66
+Ethiopia,2018,66
+Ethiopia,2019,67
+Ghana,2000,57
+Ghana,2001,57
+Ghana,2002,57
+Ghana,2003,58
+Ghana,2004,58
+Ghana,2005,59
+Ghana,2006,59
+Ghana,2007,60
+Ghana,2008,60
+Ghana,2009,61
+Ghana,2010,61
+Ghana,2011,61
+Ghana,2012,62
+Ghana,2013,62
+Ghana,2014,62
+Ghana,2015,63
+Ghana,2016,63
+Ghana,2017,63
+Ghana,2018,64
+Ghana,2019,64
+Kenya,2000,51
+Kenya,2001,51
+Kenya,2002,52
+Kenya,2003,52
+Kenya,2004,53
+Kenya,2005,55
+Kenya,2006,56
+Kenya,2007,57
+Kenya,2008,59
+Kenya,2009,60
+Kenya,2010,61
+Kenya,2011,62
+Kenya,2012,63
+Kenya,2013,63
+Kenya,2014,64
+Kenya,2015,65
+Kenya,2016,65
+Kenya,2017,66
+Kenya,2018,66
+Kenya,2019,67
+Nigeria,2000,46
+Nigeria,2001,47
+Nigeria,2002,47
+Nigeria,2003,47
+Nigeria,2004,48
+Nigeria,2005,48
+Nigeria,2006,49
+Nigeria,2007,49
+Nigeria,2008,50
+Nigeria,2009,50
+Nigeria,2010,51
+Nigeria,2011,51
+Nigeria,2012,52
+Nigeria,2013,52
+Nigeria,2014,53
+Nigeria,2015,53
+Nigeria,2016,54
+Nigeria,2017,54
+Nigeria,2018,54
+Nigeria,2019,55
+Rwanda,2000,49
+Rwanda,2001,50
+Rwanda,2002,51
+Rwanda,2003,52
+Rwanda,2004,54
+Rwanda,2005,55
+Rwanda,2006,57
+Rwanda,2007,59
+Rwanda,2008,61
+Rwanda,2009,62
+Rwanda,2010,63
+Rwanda,2011,65
+Rwanda,2012,65
+Rwanda,2013,66
+Rwanda,2014,67
+Rwanda,2015,67
+Rwanda,2016,68
+Rwanda,2017,68
+Rwanda,2018,69
+Rwanda,2019,69
+South Korea,2000,76
+South Korea,2001,76
+South Korea,2002,77
+South Korea,2003,77
+South Korea,2004,78
+South Korea,2005,78
+South Korea,2006,79
+South Korea,2007,79
+South Korea,2008,80
+South Korea,2009,80
+South Korea,2010,80
+South Korea,2011,81
+South Korea,2012,81
+South Korea,2013,81
+South Korea,2014,82
+South Korea,2015,82
+South Korea,2016,82
+South Korea,2017,83
+South Korea,2018,83
+South Korea,2019,83
