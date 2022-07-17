@@ -108,7 +108,7 @@ color: rgb(255,255,255,0.8);
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #2a364f;
 }
 
 /* Fading animation */
