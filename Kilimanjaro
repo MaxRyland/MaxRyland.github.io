@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilimanjaro</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+    </style>
+
+    <!--The next three lines allow the Vega embed-->
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+
+</head>
+
+<body>
+
+    <h1>About me.</h1>
+  
+  <a class="dashboardButtonMore" href="index">Home</a>
+  <a class="dashboardButtonMore" href="project">Project</a>
+  <a class="dashboardButtonMore" href="portfolio">Portfolio</a>
+    
+  
+ <p> <br> <p>
+
+    <p> Kilimanjaro pictures!  <br>
+
+        <br>
+       
+        Three years on and two cancelations later, this summer i have finally set off on my Kilimqnjqro adventure!  <br>
+       
+
+        <br>
+        This 6 day hike trekking up to the 'roof of Africa' has been the experience of a lifetime made all the more incredible by the fantastic group 
+        of people I was sharing this trip with. 
+        
+        <br> I would like to thank everyone who made this possible by donating to the fantastic Hope for Children charity. 
+        Speaking to the guides and porters, your donations are greatly appreciated and go a long way to helping children and many families live happier
+        healthier lives.
+        
+        <br>
+
+        As promised, here are some pictures from my time climbimg Mt. Kilimajaro! 
+        
+        <br>
+
+        </p>
+        
+     <img src="profile picture.jpeg" alt="Trulli" width="300" height="300" >
+        
+       
+
+</body>
+
+</html>
